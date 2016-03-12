@@ -1,0 +1,17 @@
+# Node.js
+node_modules
+npm-debug.log
+
+# OSX
+**.DS_Store
+
+# Build HTML
+www/*.html
+www/**.html
+www/***.html
+
+# Build CSS
+www/css/*.css
+
+# Build JS
+www/js/*.js

@@ -1,0 +1,18 @@
+button-color(base-color = color-black, text-color = color-white)
+    background base-color
+    color text-color
+
+.button, button, input[type='submit'], input[type='reset']
+    button-color()
+    border-radius()
+    display inline-block
+    padding 15px 20px
+    text-transform uppercase
+    font-weight bold
+
+    &.primary
+        button-color(color-brand)
+
+    &.large
+        padding 20px 30px
+        font-size type-size-base + 3px

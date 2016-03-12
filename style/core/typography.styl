@@ -1,0 +1,52 @@
+body
+    smooth-font()
+    font-family 'Gotham'
+    font-size type-size-base
+
+a
+    color color-brand
+
+    img
+        border 0
+
+.center
+    text-align center
+
+vertical-rhythm()
+    margin-bottom 20px
+    margin-top 0
+
+    &:last-child
+        margin-bottom 0
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
+    vertical-rhythm()
+    color color-white
+
+h1, .h1, h2, .h2
+    text-transform uppercase
+
+h3, .h3, h4, .h4, h5, .h5, h6, .h6
+    text-transform none
+    opacity .6
+
+h1, .h1
+    font-size heading-size-base
+
+h2, .h2
+    font-size heading-size-base - heading-size-step
+
+h3, .h3
+    font-size heading-size-base - heading-size-step * 2
+
+h4, .h4
+    font-size heading-size-base - heading-size-step * 3
+
+h5, .h5
+    font-size heading-size-base - heading-size-step * 4
+
+h6, .h6
+    font-size heading-size-base - heading-size-step * 5
+
+p, ol, ul, blockquote
+    vertical-rhythm()

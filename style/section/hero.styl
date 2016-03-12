@@ -1,0 +1,67 @@
+section.hero
+    background-color color-sky
+    position relative
+
+    h1
+        font-weight 900
+        margin-bottom 5px
+
+    h1, h2
+        color desaturate(color-blue-light, 60%)
+
+    h2
+        margin-bottom 30px
+
+    .logo
+        display block
+        max-width 350px
+        margin auto
+        margin-bottom 15px
+        position relative
+
+        img
+            width 100%
+            position relative
+
+        &:before
+            absolute-center()
+            bg-image('hero/sun', contain, center center, no-repeat)
+            pointer-events none
+            content ''
+            width 180%
+            padding-bottom @width
+            transition transform .2s
+            transform-origin 300% 300%
+
+        &:hover:before
+            transform scale(1.2)
+
+    .content
+        position relative
+        z-index 1
+
+    .cloud
+        position absolute
+        bottom 0
+        background-size contain
+        background-position center bottom
+        background-repeat no-repeat
+        left -100%
+
+        &.cloud-01
+            width 50%
+            padding-bottom 25%
+            background-image url(assets-dir + '/hero/cloud-03.svg')
+            animation cloud 50s -10s infinite linear
+
+        &.cloud-02
+            width 40%
+            padding-bottom 20%
+            background-image url(assets-dir + '/hero/cloud-02.svg')
+            animation cloud 40s -30s infinite linear
+
+        &.cloud-03
+            width 30%
+            padding-bottom 15%
+            background-image url(assets-dir + '/hero/cloud-01.svg')
+            animation cloud 45s -5s infinite linear
