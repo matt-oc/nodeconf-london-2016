@@ -13,7 +13,13 @@ section
     section-color()
 
     .page-size
-        padding 100px 0
+        padding 100px 20px
+
+    @media (max-width: mobile-breakpoint)
+
+        .page-size
+            padding 50px 20px
+            text-align center
 
 .page-size
     page-size()
@@ -26,7 +32,7 @@ body.fix-header
         top 0
         width 100%
         z-index 999
-        
+
     section:first-child
         margin-top 54px
 
@@ -70,3 +76,12 @@ header
 
             &.active
                 color rgba(color-white, .3)
+
+    @media (max-width: mobile-breakpoint)
+        text-align center
+
+        a.logo
+            float none
+
+        .nav
+            display none
