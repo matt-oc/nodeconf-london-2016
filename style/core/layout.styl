@@ -18,10 +18,22 @@ section
 .page-size
     page-size()
 
+body.fix-header
+
+    header
+        position fixed
+        left 0
+        top 0
+        width 100%
+        z-index 999
+        
+    section:first-child
+        margin-top 54px
+
 header
     clearfix()
     background color-blue-dark
-    padding 17px
+    padding 17px 0
     font-size 18px
 
     a.logo

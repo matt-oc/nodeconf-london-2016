@@ -1,0 +1,12 @@
+{
+    "browser" : true,
+    "esnext"  : true,
+    "globals" : {
+        "console" : true
+    },
+    "strict"  : "implied",
+    "undef"   : true,
+    "unused"  : true,
+    "noyield" : true,
+    "sub"     : true
+}
