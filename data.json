@@ -1,1 +1,69 @@
-{}
+{
+    "speakers": [
+
+        {
+            "avatar"         : "http://placehold.it/200x200",
+            "name"           : "John Doe",
+            "title"          : "Foo at Bar",
+            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
+            "twitter_handle" : "jdoe"
+        },
+
+        {
+            "avatar"         : "http://placehold.it/200x200",
+            "name"           : "John Doe",
+            "title"          : "Foo at Bar",
+            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
+            "twitter_handle" : "jdoe"
+        },
+
+        {
+            "avatar"         : "http://placehold.it/200x200",
+            "name"           : "John Doe",
+            "title"          : "Foo at Bar",
+            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
+            "twitter_handle" : "jdoe"
+        },
+
+        {
+            "avatar"         : "http://placehold.it/200x200",
+            "name"           : "John Doe",
+            "title"          : "Foo at Bar",
+            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
+            "twitter_handle" : "jdoe"
+        },
+
+        {
+            "avatar"         : "http://placehold.it/200x200",
+            "name"           : "John Doe",
+            "title"          : "Foo at Bar",
+            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
+            "twitter_handle" : "jdoe"
+        },
+
+        {
+            "avatar"         : "http://placehold.it/200x200",
+            "name"           : "John Doe",
+            "title"          : "Foo at Bar",
+            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
+            "twitter_handle" : "jdoe"
+        },
+
+        {
+            "avatar"         : "http://placehold.it/200x200",
+            "name"           : "John Doe",
+            "title"          : "Foo at Bar",
+            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
+            "twitter_handle" : "jdoe"
+        },
+
+        {
+            "avatar"         : "http://placehold.it/200x200",
+            "name"           : "John Doe",
+            "title"          : "Foo at Bar",
+            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
+            "twitter_handle" : "jdoe"
+        }
+
+    ]
+}

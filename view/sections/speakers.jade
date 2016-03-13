@@ -1,0 +1,24 @@
+section#speakers(full-height): .page-size
+
+    h2 Speakers list
+
+    ul.speakers-list
+
+        each speaker, i in speakers
+
+            if i === 0 || i % 4 === 0
+
+                if i > 0
+                    </div>
+
+                <div class='row speakers-list'>
+
+            li.col-3
+                img.avatar(src='#{speaker.avatar}')
+
+                h4 #{speaker.name}
+                h5 #{speaker.title}
+
+                p=speaker.bio
+
+                a.twitter-handle(href='https://www.twitter.com/#{speaker.twitter_handle}', target='_blank') @#{speaker.twitter_handle}

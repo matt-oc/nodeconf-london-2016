@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+
+    head
+
+        link(type='text/css', href='/css/styles.css', rel='stylesheet')
+
+        title
+            block title
+                | NodeConf London 2016 #{foo}
+
+    body
+
+        block top-content
+
+        header: .page-size
+
+            a.logo(href='/', title='NodeConf Logo')
+                img(src='/assets/logo/nodeconf.svg', alt='NodeConf')
+                span London, 2016
+
+            ul.nav
+                li: a.active(href='#') Home
+                li: a(href='#sponsors') Sponsors
+                li: a(href='#speakers') Speakers
+                li: a(href='#venue') Venue
+                li: a(href='#schedule') Schedule
+                li: a(href='#tickets') Tickets
+
+        block main-content
+
+        script(type='text/javascript', src='/js/index.js')

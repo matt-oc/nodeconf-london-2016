@@ -2,9 +2,12 @@ body
     smooth-font()
     font-family 'Gotham'
     font-size type-size-base
+    color color-white
 
 a
     color color-brand
+    text-decoration none
+    cursor pointer
 
     img
         border 0
@@ -50,3 +53,11 @@ h6, .h6
 
 p, ol, ul, blockquote
     vertical-rhythm()
+
+p
+
+    &.large
+        font-size type-size-large
+
+    &.small
+        font-size type-size-large

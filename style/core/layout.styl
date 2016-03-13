@@ -11,7 +11,50 @@ page-size()
 
 section
     section-color()
-    padding 100px 0
+
+    .page-size
+        padding 100px 0
 
 .page-size
     page-size()
+
+header
+    clearfix()
+    background color-blue-dark
+    padding 17px
+    font-size 18px
+
+    a.logo
+        display block
+        float left
+
+        span
+            text-transform uppercase
+
+            &:before
+                content '\2022'
+                margin 0 10px
+                opacity .5
+
+        img
+            height 17px
+
+    a
+        color color-white
+
+    ul
+        debullet()
+        float right
+
+        li
+            display inline-block
+            margin-left 20px
+
+        a
+            transition color .2s
+
+            &:hover
+                color color-brand
+
+            &.active
+                color rgba(color-white, .3)

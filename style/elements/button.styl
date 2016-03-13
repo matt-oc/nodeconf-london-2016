@@ -1,14 +1,18 @@
-button-color(base-color = color-black, text-color = color-white)
-    background base-color
+button-color(base-color = rgba(color-black, .3), text-color = color-white)
+    background-color base-color
     color text-color
+
+    &:hover
+        background saturate(lighten(base-color, 10), 30)
 
 .button, button, input[type='submit'], input[type='reset']
     button-color()
     border-radius()
+    vertical-rhythm()
     display inline-block
-    padding 15px 20px
+    padding 18px 25px
     text-transform uppercase
-    font-weight bold
+    transition background-color .2s
 
     &.primary
         button-color(color-brand)
@@ -16,3 +20,4 @@ button-color(base-color = color-black, text-color = color-white)
     &.large
         padding 20px 30px
         font-size type-size-base + 3px
+        font-weight bold
