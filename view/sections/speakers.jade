@@ -2,23 +2,30 @@ section#speakers(full-height): .page-size
 
     h2 Speakers list
 
-    ul.speakers-list
+    h4.center
+        | We are currently looking for speakers
+        br
+        | If you'd like to be involved, we'd love to hear your proposal
 
-        each speaker, i in speakers
+    a.button.center.primary Join as a Speaker
 
-            if i === 0 || i % 4 === 0
+    //- ul.speakers-list
 
-                if i > 0
-                    </div>
+    //-     each speaker, i in speakers
 
-                <div class='row speakers-list'>
+    //-         if i === 0 || i % 4 === 0
 
-            li.col-3
-                img.avatar(src='#{speaker.avatar}')
+    //-             if i > 0
+    //-                 </div>
 
-                h4 #{speaker.name}
-                h5 #{speaker.title}
+    //-             <div class='row speakers-list'>
 
-                p=speaker.bio
+    //-         li.col-3
+    //-             img.avatar(src='#{speaker.avatar}')
 
-                a.twitter-handle(href='https://www.twitter.com/#{speaker.twitter_handle}', target='_blank') @#{speaker.twitter_handle}
+    //-             h4 #{speaker.name}
+    //-             h5 #{speaker.title}
+
+    //-             p=speaker.bio
+
+    //-             a.twitter-handle(href='https://www.twitter.com/#{speaker.twitter_handle}', target='_blank') @#{speaker.twitter_handle}
