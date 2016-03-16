@@ -1,0 +1,48 @@
+section#cfp
+    bg-color = #3e5d6c
+
+    section-color(bg-color)
+
+    img.illustration
+        display block
+        width 70%
+        margin auto
+
+    .cfp-boxes
+
+        .col-3
+
+            .box
+                border-radius()
+                overflow hidden
+                background rgba(color-white, .1)
+
+            &:nth-child(1) h3
+                background #f07b48
+
+            &:nth-child(2) h3
+                background #5ed7b3
+
+            &:nth-child(3) h3
+                background #f49e8a
+
+            &:nth-child(4) h3
+                background #f3b82a
+
+        h3
+            text-align center
+            padding 20px
+            background color-white
+            color bg-color
+            opacity 1
+            color color-white
+
+        ul
+            debullet()
+
+            li
+                padding 5px 20px
+                margin-bottom 10px
+
+                &:last-child
+                    margin-bottom 20px
