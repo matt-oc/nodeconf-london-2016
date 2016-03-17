@@ -16,13 +16,6 @@ a
 .center
     text-align center
 
-vertical-rhythm()
-    margin-bottom 20px
-    margin-top 0
-
-    &:last-child
-        margin-bottom 0
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
     vertical-rhythm()
     color color-white
@@ -51,6 +44,14 @@ h5, .h5
 
 h6, .h6
     font-size heading-size-base - heading-size-step * 5
+
+hr
+    vertical-rhythm(40px)
+    margin-top 40px
+    height 0
+    border 0
+    border-top 1px dashed color-white
+    opacity .2
 
 p, ol, ul, blockquote
     vertical-rhythm()
