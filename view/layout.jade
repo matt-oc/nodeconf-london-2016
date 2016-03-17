@@ -22,7 +22,8 @@ html(lang='en')
             ul.nav
                 li: a.active(href='/#hero') Home
                 li: a(href='/call-for-speakers') Call for Speakers
-                li: a(href='/code-of-conduct') Code of Conduct
+                li: a(href='#sponsors') Sponsors
+                //- li: a(href='/code-of-conduct') Code of Conduct
                 //- li: a(href='/#cause') Cause
                 //- li: a(href='/#speakers') Speakers
                 li: a(href='/#venue') Venue
@@ -31,5 +32,12 @@ html(lang='en')
                 //- li: a(href='/#tickets') Tickets
 
         block main-content
+
+        footer: .page-size
+
+            ul.links
+
+                li: a(href='/code-of-conduct') Code of Conduct
+                li: a(href='mailto:ian.crowther@nearform.com') Contact Us
 
         script(type='text/javascript', src='/js/index.js')
