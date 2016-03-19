@@ -81,8 +81,17 @@ html(lang='en')
 
             ul.links
 
-                li: a(href='/code-of-conduct') Code of Conduct
-                li: a(href='mailto://ian.crowther@nearform.com?Subject=NodeConf%20London%202016%20-%20Enquiry') Contact Us
+                li: a.contact-github(href='https://github.com/tancredi/nodeconf-london-2016', alt='Fork on Github', target='_blank')
+                    i.icon-github
+                    span Fork Us
+
+                li: a.contact-twitter(href='https://twitter.com/nodeconf_london', alt='Twitter', target='_blank')
+                    i.icon-twitter
+                    span @nodeconf_london
+
+                li: a.contact-email(href='mailto://ian.crowther@nearform.com?Subject=NodeConf%20London%202016%20-%20Enquiry', alt='Email', target='_blank')
+                    i.icon-mail
+                    span Contact Us
 
         script(type='text/javascript', src='/js/index.js')
 
