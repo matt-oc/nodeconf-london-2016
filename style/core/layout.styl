@@ -11,6 +11,8 @@ page-size()
 
 section
     section-color()
+    max-width 100%
+    overflow hidden
 
     .page-size
         padding 100px 20px
@@ -23,6 +25,11 @@ section
 
 .page-size
     page-size()
+
+@media (max-width: mobile-breakpoint)
+
+    body
+        padding-top header-height
 
 body.fix-header
 
@@ -37,6 +44,9 @@ body.fix-header
         margin-top 54px
 
 header
+    hamburger-spacing = 10px
+    hamburger-scale = .34
+
     clearfix()
     background color-blue-dark
     padding 17px 0
@@ -57,6 +67,27 @@ header
         img
             height 17px
 
+    .hamburger
+
+        border-radius()
+        background lighten(color-blue, 10)
+        position absolute
+        right hamburger-spacing
+        top hamburger-spacing
+        width (header-height - hamburger-spacing * 2)
+        height @width
+        display none
+
+        .inner
+            hamburger-closed(hamburger-scale)
+            position absolute
+            left 50%
+            top 50%
+            transform translate(-50%, -50%)
+
+    &.open .hamburger .inner
+        hamburger-open(hamburger-scale)
+
     a
         color color-white
 
@@ -71,20 +102,92 @@ header
         a
             transition color .2s
 
-            &:hover
-                color color-brand
+            @media (min-width: mobile-breakpoint)
 
-            &.active
-                color rgba(color-white, .3)
+                &:hover
+                    color color-brand
+
+                &.active
+                    color rgba(color-white, .3)
 
     @media (max-width: mobile-breakpoint)
+        position fixed
+        left 0
+        top 0
         text-align center
+        z-index 9
+        width 100%
+
+        a.logo
+            badge-bg-color = darken(color-blue, 10)
+            badge-height = 22px
+
+            span
+                padding 5px 10px
+                background badge-bg-color
+                position absolute
+                bottom 0
+                margin-bottom -(badge-height / 2)
+                font-size 12px
+                left 50%
+                transform translateX(-50%)
+                z-index 9
+
+                &:before, &:after
+                    content ''
+                    margin 0
+                    position absolute
+                    opacity 1
+
+                &:before
+                    tail(badge-bg-color, 'left', badge-height / 2)
+
+                &:after
+                    tail(badge-bg-color, 'right', badge-height / 2)
+
+        .hamburger
+            display block
 
         a.logo
             float none
 
         .nav
-            display none
+            float none
+            position fixed
+            right 100%
+            top header-height
+            width 100%
+            height 100%
+            transform translateX(0)
+            transition transform .2s
+            background color-blue
+
+            &.dragging
+                transition none
+
+            li
+                active-color = lighten(color-blue, 10)
+
+                display block
+                margin 0
+
+                a
+                    display block
+                    text-align center
+                    padding 15px
+                    border-bottom 1px solid rgba(color-black, .2)
+                    box-shadow rgba(color-white, .05) 0 1px 0 0
+                    transition background .2s
+                    background rgba(active-color, 0)
+
+                    &:active
+                        background active-color
+
+                &:last-child a
+                    box-shadow none
+
+        &.open .nav
+            transform translateX(100%)
 
 footer
     background color-black

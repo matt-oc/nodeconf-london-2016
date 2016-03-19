@@ -41,13 +41,21 @@ html(lang='en')
 
         block top-content
 
-        header: .page-size
+        header(data-header): .page-size
 
             a.logo(href='/', title='NodeConf Logo')
                 img(src='/assets/logo/nodeconf.svg', alt='NodeConf')
-                span London, 2016
+                span London,&nbsp;2016
 
-            ul.nav
+            a.hamburger(data-touch-element, data-navigation-toggle): .inner
+                span
+                span
+                span
+                span
+                span
+                span
+
+            ul.nav(data-navigation)
                 li: a.active(href='/#hero') Home
                 li: a(href='/call-for-speakers') Call for Speakers
                 li: a(href='/code-of-conduct') Code of Conduct
