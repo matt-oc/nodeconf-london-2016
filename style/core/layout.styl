@@ -122,28 +122,8 @@ header
             badge-height = 22px
 
             span
-                padding 5px 10px
-                background badge-bg-color
-                position absolute
-                bottom 0
-                margin-bottom -(badge-height / 2)
+                hexa-badge('bottom')
                 font-size 12px
-                left 50%
-                transform translateX(-50%)
-                z-index 9
-                top auto
-
-                &:before, &:after
-                    content ''
-                    margin 0
-                    position absolute
-                    opacity 1
-
-                &:before
-                    tail(badge-bg-color, 'left', badge-height / 2)
-
-                &:after
-                    tail(badge-bg-color, 'right', badge-height / 2)
 
         .hamburger
             display block

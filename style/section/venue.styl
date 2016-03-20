@@ -1,20 +1,6 @@
 #venue
     section-color(#152c37)
 
-    .copy
-        margin-top 60px
-
-    a.map
-        bg-image('/maps/venue', contain, center center, no-repeat)
-        display block
-        width 100%
-        padding-bottom 100%
-        margin-top 100px
-        margin-bottom 50px
-
-        @media (max-width: mobile-breakpoint)
-            margin-top 30px
-
     iframe
         width 100%
         margin-top 150px
@@ -30,16 +16,32 @@
             border-radius()
             width 100%
 
+    .photo-venue
+        border-radius(5px)
+        width 100%
+        padding-bottom 60%
+        background-size cover
+        background-position center center
+        display block
+
+        &.photo-venue-01
+            bg-image('/photos/venue/01', false, false, false, 'jpg')
+            margin-bottom 20px
+
+        &.photo-venue-02
+            bg-image('/photos/venue/02', false, false, false, 'jpg')
+
+        &.photo-venue-03
+            bg-image('/photos/venue/03', false, false, false, 'jpg')
+
+        &.photo-venue-04
+            bg-image('/photos/venue/04', false, false, false, 'jpg')
+
     @media (max-width: mobile-breakpoint)
 
-        .col-6
-            margin 0
-
-        .off-1
-            margin 0
-
-        iframe
-            margin-top 40px
+        .off-2
+            margin-left 0
+            padding 0
 
         ul.photos li
             padding 0
