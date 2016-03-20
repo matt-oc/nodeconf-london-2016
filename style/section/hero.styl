@@ -2,6 +2,18 @@
     background-color color-sky
     position relative
     overflow hidden
+    transition background .2s, color .2s
+
+    // Stars
+    &:before
+        absolute-cover()
+        content ''
+        background-image url(assets-dir + '/hero/stars.svg')
+        background-repeat no-repeat
+        background-position center center
+        transition opacity .2s
+        pointer-events none
+        opacity 0
 
     h1
         font-weight 900
@@ -9,6 +21,7 @@
 
     h1, h2
         color desaturate(color-blue-light, 60%)
+        transition color .2s
 
     h2
         margin-bottom 30px
@@ -20,10 +33,22 @@
         margin-bottom 15px
         position relative
 
+        &:focus
+            outline 0
+
         img
             width 100%
             position relative
+            transition opacity .2s
 
+            &.day
+                top 2px
+
+            &.night
+                absolute-center()
+                opacity 0
+
+        // Sun
         &:before
             absolute-center()
             bg-image('hero/sun', contain, center center, no-repeat)
@@ -31,7 +56,7 @@
             content ''
             width 180%
             padding-bottom @width
-            transition transform .2s
+            transition transform .2s, opacity .2s
             transform-origin 300% 300%
 
         &:hover:before
@@ -44,28 +69,87 @@
     .cloud
         position absolute
         bottom 0
-        background-size contain
-        background-position center bottom
-        background-repeat no-repeat
         left -100%
+        pointer-events none
+
+        // Day and Night cloud assets
+        &:before, &:after
+            absolute-cover()
+            background-size contain
+            background-position center bottom
+            background-repeat no-repeat
+            content ''
+            transition opacity .2s
+
+        &:after
+            opacity 0
 
         &.cloud-01
             width 50%
             padding-bottom 25%
-            background-image url(assets-dir + '/hero/cloud-03.svg')
             animation cloud 50s -10s infinite linear
+
+            &:before
+                background-image url(assets-dir + '/hero/cloud-03.svg')
+
+            &:after
+                background-image url(assets-dir + '/hero/cloud-03-night.svg')
 
         &.cloud-02
             width 40%
             padding-bottom 20%
-            background-image url(assets-dir + '/hero/cloud-02.svg')
             animation cloud 40s -30s infinite linear
+
+            &:before
+                background-image url(assets-dir + '/hero/cloud-02.svg')
+
+            &:after
+                background-image url(assets-dir + '/hero/cloud-02-night.svg')
 
         &.cloud-03
             width 30%
             padding-bottom 15%
-            background-image url(assets-dir + '/hero/cloud-01.svg')
-            animation cloud 45s -5s infinite linear
+            animation cloud 45s -5s infinite line
+
+            &:before
+                background-image url(assets-dir + '/hero/cloud-01.svg')
+
+            &:after
+                background-image url(assets-dir + '/hero/cloud-01-night.svg')
+
+    &.night
+        background #2d2c3d
+        
+        &:before
+            opacity 1
+
+        &, h1, h2
+            color color-white
+
+        a.button
+            button-color(color-green-light, rgba(color-blue, .6))
+            transition background .2s, color .2s
+
+        .logo
+            
+            img
+
+            &.day
+                opacity 0
+
+                &.night
+                    opacity 1
+
+            &:before
+                opacity 0
+
+        .cloud
+
+            &:before
+                opacity 0
+
+            &:after
+                opacity 1
 
     @media (max-width: mobile-breakpoint)
 
