@@ -10,14 +10,20 @@ section#getting-there
         width 100%
         padding-bottom 100%
         margin 0 auto
+        transition transform .2s, opacity .2s
+        opacity .8
+
+        &:hover
+            transform scale(1.05)
+            opacity 1
 
         @media (max-width: mobile-breakpoint)
             margin-top 30px
-
-    h4
-        margin-bottom 5px
 
     @media (max-width: mobile-breakpoint)
 
         .copy
             margin-top 0
+
+        a.map
+            opacity 1
