@@ -1,5 +1,11 @@
 row-color(base-color = #999)
-    border-left 10px solid base-color
+    bg-color = mix(base-color, color-white, 10%)
+
+    border-left-color base-color
+    background-color bg-color
+
+    // &:nth-child(odd)
+    //     background-color darken(bg-color, 2)
 
     .segment
         color base-color
@@ -32,16 +38,17 @@ row-color(base-color = #999)
             margin 0
 
         tbody
-            background color-white
+            row-bg-color = color-white
+
+            background-color row-bg-color
 
             tr
-                transition background .2s
+                transition background .2s, color .2s
+                cursor default
+                border-left 10px solid rgba(color-white, 0)
 
-                &:nth-child(odd)
-                    background-color #f5f5f5
-
-                &:hover
-                    background mix(color-brand, darken(color-white, 5), 10%)
+                // &:nth-child(odd)
+                //     background-color darken(row-bg-color, 3)
 
                 &.start-it
                     row-color(color-start-it)
@@ -54,6 +61,14 @@ row-color(base-color = #999)
 
                 &.use-it
                     row-color(color-use-it)
+
+                &:hover
+                    background-color color-brand
+
+                    border-left-color rgba(color-white, 0)
+
+                    &, .segment
+                        color color-white
 
             .segment
                 color #666
