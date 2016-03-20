@@ -1,0 +1,28 @@
+hexa-badge(dir = 'top', badge-height = 22px, bg-color = darken(color-blue, 10))
+    padding 5px 10px
+    background bg-color
+    position absolute
+    margin (badge-height / -2) 0
+    left 50%
+    transform translateX(-50%)
+    z-index 9
+
+    if dir == 'top'
+        top 0
+        bottom auto
+    else if dir == 'bottom'
+        bottom 0
+        top auto
+        
+
+    &:before, &:after
+        content ''
+        margin 0
+        position absolute
+        opacity 1
+
+    &:before
+        tooltip-tail(bg-color, 'left', badge-height / 2)
+
+    &:after
+        tooltip-tail(bg-color, 'right', badge-height / 2)
