@@ -1,5 +1,6 @@
 .box
     border-radius(5px)
+    flat-shadow()
     padding 20px
     background rgba(0, 0, 0, .2)
     margin 30px auto 20px
@@ -7,3 +8,8 @@
 
     &.contained
         max-width 300px
+        box-shadow none
+
+    &.white
+        background-color color-white
+        color color-black
