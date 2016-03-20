@@ -2,7 +2,7 @@ button-color(base-color = rgba(color-black, .3), text-color = color-white)
     background-color base-color
     color text-color
 
-    &:hover
+    &:hover:not(.disabled)
         background saturate(lighten(base-color, 10), 30)
 
 .button, button, input[type='submit'], input[type='reset']
@@ -25,3 +25,6 @@ button-color(base-color = rgba(color-black, .3), text-color = color-white)
         padding 20px 30px
         font-size type-size-base + 3px
         font-weight bold
+
+    &.disabled
+        opacity .4

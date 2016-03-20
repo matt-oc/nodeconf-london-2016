@@ -6,6 +6,33 @@ switch-transition-time = 1s
     overflow hidden
     transition background switch-transition-time, color switch-transition-time
 
+    .scroll-pointer
+        border-radius()
+        padding 10px 20px
+        position absolute
+        bottom 20px
+        left 50%
+        transform translateX(-50%)
+        color color-blue
+        animation scroll-pointer-float .7s infinite alternate
+        opacity 0
+        transition opacity 3s
+        background color-blue
+        color color-white
+        font-size 12px
+        
+        &.show
+            opacity 1
+
+        &:before
+            tooltip-tail(color-blue, 'bottom', 8px)
+            content ''
+            position absolute
+            left 50%
+
+        &:after
+            content 'Keep Scrolling'
+
     a.button
         transition background switch-transition-time, color switch-transition-time
 
@@ -157,6 +184,9 @@ body.night #hero
                 opacity 1
 
     @media (max-width: mobile-breakpoint)
+
+        .scroll-pointer
+            display none
 
         .logo
             width 70%
