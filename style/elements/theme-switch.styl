@@ -1,0 +1,49 @@
+theme-switch-active(which = 'before')
+    other = 'after'
+
+    if which == 'after'
+        other = 'before'
+
+    &:hover:{which}
+        background lighten(color-blue, 20)
+
+    &:{which}
+        color #f6e274
+        background lighten(color-blue, 10)
+
+    &:{other}
+        color rgba(#f6f3e2, .4)
+        background darken(color-blue, 20)
+
+.theme-switch
+    switch-size = 40px
+
+    border-radius()
+    position absolute
+    right 20px
+    top 20px
+    width switch-size
+    overflow hidden
+    font-size 24px
+    cursor pointer
+    z-index 1
+
+    &:before, &:after
+        icon()
+        width 100%
+        line-height switch-size
+        display block
+        transition color .2s, background .2s
+
+    theme-switch-active('before')
+
+    &.on
+        theme-switch-active('after')
+
+    // Day
+    &:before
+        @extends .icon-sun:before
+
+    // Night
+    &:after
+        @extends .icon-moon:before
