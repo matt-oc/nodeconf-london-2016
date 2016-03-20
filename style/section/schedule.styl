@@ -1,0 +1,25 @@
+#schedule
+    position relative
+    overflow hidden
+
+    .copy
+        position relative
+        z-index 1
+
+    .illustration
+        bg-image('illustrations/hex-city', contain, right center, no-repeat)
+        width 50%
+        padding-bottom 40%
+        position absolute
+        right 0
+        top 50%
+        margin-top -280px
+
+    @media (max-width: mobile-breakpoint)
+
+        .illustration
+            width 100%
+            padding-bottom 100%
+            margin-top 0
+            transform translateY(-50%)
+            opacity .2
