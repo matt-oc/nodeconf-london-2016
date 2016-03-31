@@ -1,23 +1,35 @@
-@keyframes cloud {
+@keyframes float {
 
     0% {
-        left -600px
+        transform translate3d(0, 10px, 0)
     }
 
     100% {
-        left 100%
+        transform translate3d(0, -10px, 0)
     }
 
 }
 
-@keyframes scroll-pointer-float {
+@keyframes cloud {
 
     0% {
-        margin-bottom 0
+        transform translate3d(-600px, 0, 0)
+    }
+
+    100% {
+        transform translate3d(100%, 0, 0)
+    }
+
+}
+
+@keyframes float-scroll-pointer {
+
+    0% {
+        transform translate3d(-50%, -5px, 0)
     }
     
     100% {
-        margin-bottom 10px
+        transform translate3d(-50%, 5px, 0)
     }
 
 }

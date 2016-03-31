@@ -1,6 +1,7 @@
 switch-transition-time = 1s
 
 #hero
+    accelerate()
     background-color color-sky
     position relative
     overflow hidden
@@ -10,11 +11,10 @@ switch-transition-time = 1s
         border-radius()
         padding 10px 20px
         position absolute
-        bottom 20px
+        bottom 25px
         left 50%
-        transform translateX(-50%)
         color color-blue
-        animation scroll-pointer-float .7s infinite alternate
+        animation float-scroll-pointer .7s infinite alternate
         opacity 0
         transition opacity 3s
         background color-blue
@@ -92,7 +92,7 @@ switch-transition-time = 1s
             transform-origin 300% 300%
 
         &:hover:before
-            transform scale(1.2)
+            transform scale(1.2) translate3d(0, 0, 0)
 
     .content
         position relative
@@ -100,9 +100,10 @@ switch-transition-time = 1s
 
     .cloud
         position absolute
+        left 0
         bottom 0
-        left -100%
         pointer-events none
+        transform translate3d(-100%, 0, 0) translate3d(0, 0, 0)
 
         // Day and Night cloud assets
         &:before, &:after
