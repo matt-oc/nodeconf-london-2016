@@ -4,11 +4,16 @@ section#sponsors
 
     ul.sponsors-list
         debullet()
+        // border-radius()
+        margin-bottom 50px
+        // background color-white
+        display inline-block
 
         li
             display inline-block
-            width 150px
-            margin 20px
+            width 200px
+            padding 20px
+            box-sizing border-box
 
             a
                 opacity .5
@@ -16,3 +21,18 @@ section#sponsors
             img
                 display block
                 width 100%
+
+        &.community
+
+            li
+                width 140px
+
+    @media (max-width: mobile-breakpoint)
+
+        ul.sponsors-list
+
+            li
+                width 50%
+
+            &.community li
+                width (100% / 3)
