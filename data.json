@@ -2,67 +2,11 @@
     "speakers": [
 
         {
-            "avatar"         : "http://placehold.it/200x200",
-            "name"           : "John Doe",
-            "title"          : "Foo at Bar",
-            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
-            "twitter_handle" : "jdoe"
-        },
-
-        {
-            "avatar"         : "http://placehold.it/200x200",
-            "name"           : "John Doe",
-            "title"          : "Foo at Bar",
-            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
-            "twitter_handle" : "jdoe"
-        },
-
-        {
-            "avatar"         : "http://placehold.it/200x200",
-            "name"           : "John Doe",
-            "title"          : "Foo at Bar",
-            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
-            "twitter_handle" : "jdoe"
-        },
-
-        {
-            "avatar"         : "http://placehold.it/200x200",
-            "name"           : "John Doe",
-            "title"          : "Foo at Bar",
-            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
-            "twitter_handle" : "jdoe"
-        },
-
-        {
-            "avatar"         : "http://placehold.it/200x200",
-            "name"           : "John Doe",
-            "title"          : "Foo at Bar",
-            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
-            "twitter_handle" : "jdoe"
-        },
-
-        {
-            "avatar"         : "http://placehold.it/200x200",
-            "name"           : "John Doe",
-            "title"          : "Foo at Bar",
-            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
-            "twitter_handle" : "jdoe"
-        },
-
-        {
-            "avatar"         : "http://placehold.it/200x200",
-            "name"           : "John Doe",
-            "title"          : "Foo at Bar",
-            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
-            "twitter_handle" : "jdoe"
-        },
-
-        {
-            "avatar"         : "http://placehold.it/200x200",
-            "name"           : "John Doe",
-            "title"          : "Foo at Bar",
-            "bio"            : "Morbi arcu neque, consectetur ut lorem eu dolor sit amet.",
-            "twitter_handle" : "jdoe"
+            "avatar"         : "/assets/photos/speakers/substack@2x.jpg",
+            "name"           : "James Halliday",
+            "title"          : "The disintermediated web.",
+            "bio"            : "Unix philosopher.<br>Beep boop.",
+            "twitter_handle" : "substack"
         }
 
     ]

@@ -4,31 +4,40 @@ section#speakers(full-height): .page-size
 
     h2 Speakers list
 
-    //- ul.speakers-list
+    ul.speakers-list
 
-    //-     each speaker, i in speakers
+        each speaker, i in speakers
 
-    //-         if i === 0 || i % 4 === 0
+            if i === 0 || i % 4 === 0
 
-    //-             if i > 0
-    //-                 </div>
+                if i > 0
+                    </div>
 
-    //-             <div class='row speakers-list'>
+                <div class='row speakers-list'>
 
-    //-         li.col-3
-    //-             img.avatar(src='#{speaker.avatar}')
+            li.col-3
+                img.avatar(src='#{speaker.avatar}')
 
-    //-             h4 #{speaker.name}
-    //-             h5 #{speaker.title}
+                h4 #{speaker.name}
 
-    //-             p=speaker.bio
+                if speaker.title
+                    h5 !{speaker.title}
 
-    //-             a.twitter-handle(href='https://www.twitter.com/#{speaker.twitter_handle}', target='_blank') @#{speaker.twitter_handle}
+                if speaker.bio
+                    p !{speaker.bio}
 
-    h4.center
-        | We are currently looking for speakers
-        .normal If you'd like to be involved, we'd love to hear your proposal
+                a.twitter-handle(href='https://www.twitter.com/#{speaker.twitter_handle}', target='_blank') @#{speaker.twitter_handle}
 
     br
 
-    a.button.center.primary(href='/call-for-speakers') Join as a Speaker
+    h4.center
+        | More to be announced
+        .normal Stay tuned
+
+    //- h4.center
+        | We are currently looking for speakers
+        .normal If you'd like to be involved, we'd love to hear your proposal
+
+    //- br
+
+    //- a.button.center.primary(href='/call-for-speakers') Join as a Speaker
