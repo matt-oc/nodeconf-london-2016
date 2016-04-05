@@ -2,7 +2,16 @@
     "speakers": [
 
         {
-            "avatar"         : "/assets/photos/speakers/kassandra-perch-ihrig@2x.jpg",
+            "avatar"         : "/assets/photos/speakers/christian-heilmann@2x.jpg",
+            "name"           : "Christian Heilmann",
+            "title"          : "making ES6 happen with ChakraCore and Node",
+            "category"       : "Start it",
+            "bio"            : null,
+            "twitter_handle" : "codepo8"
+        },
+
+        {
+            "avatar"         : "/assets/photos/speakers/kassandra-perch@2x.jpg",
             "name"           : "Kassandra Perch",
             "title"          : "Robots, Code, and People",
             "category"       : "Start it",
