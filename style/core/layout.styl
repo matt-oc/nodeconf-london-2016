@@ -24,6 +24,27 @@ section
             padding 50px 20px
             text-align center
 
+    &.warning
+        flat-shadow()
+        background-color color-yellow
+        padding 30px
+        text-align center
+        position relative
+        z-index 1
+
+        &:before
+            bg-image('illustrations/warning', cover, false, false, 'svg')
+            display inline-block
+            content ''
+            width 25px
+            height @width
+            margin -5px 5px -5px 0
+
+        h1, h2, h3, h4, h5, h6
+            opacity 1
+            display inline-block
+            text-shadow rgba(0, 0, 0, .1) 0 1px 0
+
 .page-size
     page-size()
 
