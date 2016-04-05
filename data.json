@@ -2,11 +2,12 @@
     "speakers": [
 
         {
-            "avatar"         : "/assets/photos/speakers/substack@2x.jpg",
-            "name"           : "James Halliday",
-            "title"          : "The disintermediated web.",
-            "bio"            : "Unix philosopher.<br>Beep boop.",
-            "twitter_handle" : "substack"
+            "avatar"         : "/assets/photos/speakers/matt-clark@2x.jpg",
+            "name"           : "Matt Clark",
+            "title"          : "Node.js that’s hugely reliable, fast, and scalable",
+            "category"       : "Use it",
+            "bio"            : null,
+            "twitter_handle" : "matthew1000"
         }
 
     ]
