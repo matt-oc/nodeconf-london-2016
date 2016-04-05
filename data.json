@@ -3,7 +3,7 @@
 
         {
             "avatar"         : "/assets/photos/speakers/colin-ihrig@2x.png",
-            "name"           : "Colin Ihring",
+            "name"           : "Colin Ihrig",
             "title"          : "State of Node.js Core",
             "category"       : "Build it",
             "bio"            : null,
