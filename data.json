@@ -2,6 +2,15 @@
     "speakers": [
 
         {
+            "avatar"         : "/assets/photos/speakers/colin-ihrig@2x.png",
+            "name"           : "Colin Ihring",
+            "title"          : "State of Node.js Core",
+            "category"       : "Build it",
+            "bio"            : null,
+            "twitter_handle" : "cjihrig"
+        },
+
+        {
             "avatar"         : "/assets/photos/speakers/matt-clark@2x.jpg",
             "name"           : "Matt Clark",
             "title"          : "Node.js that’s hugely reliable, fast, and scalable",
