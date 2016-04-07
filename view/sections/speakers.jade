@@ -8,15 +8,18 @@ section#speakers(full-height): .page-size
 
         each speaker, i in speakers
 
-            if i === 0 || i % 4 === 0
+            if i === 0 || i % 3 === 0
 
                 if i > 0
                     </div>
 
-                <div class='row speakers-list'>
+                <div class='row'>
 
-            li.col-3
-                img.avatar(src='#{speaker.avatar}')
+            li.col-4(class='category-' + speaker.category + '-it')
+
+                .avatar-wrap
+                    img.avatar(src='#{speaker.avatar}')
+                    .badge= speaker.category.substr(0, 1).toUpperCase() + speaker.category.substr(1) + ' it'
 
                 h4 #{speaker.name}
 
@@ -30,6 +33,6 @@ section#speakers(full-height): .page-size
 
     br
 
-    h4.center
+    h4.center.more
         | More to be announced
-        .normal Stay tuned
+        .normal Stay tuned&hellip;

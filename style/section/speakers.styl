@@ -1,26 +1,80 @@
+speaker-category-color(base-color)
+
+    .badge
+        background base-color
+
+        &:before
+            border-right-color base-color
+
+        &:after
+            border-left-color base-color
+
 #speakers
     section-color(#263e44)
     text-align center
 
+    .more
+        flat-shadow()
+        border-radius()
+        display inline-block
+        background color-white
+        opacity 1
+        margin-top 40px
+        color color-gray-dark
+        padding 30px
+
     ul.speakers-list
         debullet()
 
-        // .col-3
-        //     float none
-        //     display inline-block
+        p
+            margin-bottom 10px
 
         .row
-            margin 50px 0
+            margin 80px 0
             
             &:last-child
                 margin-bottom 0
 
+        li
+
+            &.category-start-it
+                speaker-category-color(color-start-it)
+
+            &.category-build-it
+                speaker-category-color(color-build-it)
+
+            &.category-ship-it
+                speaker-category-color(color-ship-it)
+
+            &.category-use-it
+                speaker-category-color(color-use-it)
+
+        .avatar-wrap
+            position relative
+            margin-bottom 40px
+
+            &:after
+                absolute-cover()
+                content ''
+                background-image url(assets-dir + '/ui/hex-mask.svg')
+                background-position center center
+                background-repeat no-repeat
+                background-size contain
+                z-index 1
+                pointer-events none
+
+        .badge
+            hex-badge('bottom', 30px, base-color)
+            position absolute
+            // margin-bottom 15px
+            line-height 20px
+            width 65px
+            font-weight bold
+
         .avatar
-            border-radius(100%)
-            width 150px
+            width 200px
             height @width
             background rgba(color-black, .2)
-            margin-bottom 20px
             mix-blend-mode luminosity
 
             &:hover
@@ -35,9 +89,6 @@
             font-weight normal
             margin-bottom 10px
 
-        p
-            margin-bottom 10px
-
         .twitter-handle
             color color-twitter
             font-size type-size-small
@@ -45,8 +96,12 @@
 
         @media (max-width: mobile-breakpoint)
 
+            .row
+                margin 0
+                margin-top 40px
+
             li
-                margin-bottom 50px
+                margin-bottom 40px
 
                 &:last-child
                     margin-bottom 0

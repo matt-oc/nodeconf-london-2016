@@ -2,37 +2,82 @@
     "speakers": [
 
         {
-            "avatar"         : "/assets/photos/speakers/christian-heilmann@2x.jpg",
-            "name"           : "Christian Heilmann",
-            "title"          : "making ES6 happen with ChakraCore and Node",
-            "category"       : "Start it",
-            "bio"            : null,
-            "twitter_handle" : "codepo8"
-        },
-
-        {
             "avatar"         : "/assets/photos/speakers/kassandra-perch@2x.jpg",
             "name"           : "Kassandra Perch",
             "title"          : "Robots, Code, and People",
-            "category"       : "Start it",
+            "category"       : "start",
             "bio"            : null,
             "twitter_handle" : "nodebotanist"
         },
 
         {
-            "avatar"         : "/assets/photos/speakers/colin-ihrig@2x.png",
+            "avatar"         : "/assets/photos/speakers/nikhila-ravi@2x.jpg",
+            "name"           : "Nikhila Ravi",
+            "title"          : "Server-less architecture in the wild",
+            "category"       : "start",
+            "bio"            : null,
+            "twitter_handle" : "nikhilaravi"
+        },
+
+        {
+            "avatar"         : "/assets/photos/speakers/christian-heilmann@2x.jpg",
+            "name"           : "Christian Heilmann",
+            "title"          : "making ES6 happen with ChakraCore and Node",
+            "category"       : "build",
+            "bio"            : null,
+            "twitter_handle" : "codepo8"
+        },
+
+        {
+            "avatar"         : "/assets/photos/speakers/colin-ihrig@2x.jpg",
             "name"           : "Colin Ihrig",
             "title"          : "State of Node.js Core",
-            "category"       : "Build it",
+            "category"       : "build",
             "bio"            : null,
             "twitter_handle" : "cjihrig"
+        },
+
+        {
+            "avatar"         : "/assets/photos/speakers/thomas-watson@2x.jpg",
+            "name"           : "Thomas Watson",
+            "title"          : "It goes to eleven",
+            "category"       : "build",
+            "bio"            : null,
+            "twitter_handle" : "wa7son"
+        },
+
+        {
+            "avatar"         : "/assets/photos/speakers/emily-rose@2x.jpg",
+            "name"           : "Emily Rose",
+            "title"          : "How I Learned to Stop Worrying",
+            "category"       : "ship",
+            "bio"            : null,
+            "twitter_handle" : "nexxylove"
+        },
+
+        {
+            "avatar"         : "/assets/photos/speakers/andrew-martin@2x.jpg",
+            "name"           : "Andrew Martin",
+            "title"          : "Avoiding Release Paralysis",
+            "category"       : "ship",
+            "bio"            : null,
+            "twitter_handle" : "sublimino"
+        },
+
+        {
+            "avatar"         : "/assets/photos/speakers/luca-maraschi@2x.jpg",
+            "name"           : "Luca Maraschi",
+            "title"          : "SWIMming in the Microservices Ocean",
+            "category"       : "use",
+            "bio"            : null,
+            "twitter_handle" : "lucamaraschi"
         },
 
         {
             "avatar"         : "/assets/photos/speakers/matt-clark@2x.jpg",
             "name"           : "Matt Clark",
             "title"          : "Node.js that’s hugely reliable, fast, and scalable",
-            "category"       : "Use it",
+            "category"       : "use",
             "bio"            : null,
             "twitter_handle" : "matthew1000"
         }
