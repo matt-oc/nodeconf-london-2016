@@ -2,6 +2,7 @@
     section-color(color-green-dark)
 
     .illustration
+        accelerate()
         width 60%
         margin-top 70px
         animation float 1s infinite alternate ease-in-out
@@ -16,3 +17,22 @@
     .cause-list
         margin-top 40px
         text-align center
+
+    @media (max-width: mobile-breakpoint)
+
+        .row
+            text-align center
+
+        .col-4
+            width ((100% - 6%) / 3)
+            margin 0 1%
+            display inline-block
+            min-width 100px
+            
+        .logo
+            margin 0
+
+        .illustration
+            max-width 200px
+            margin-top 10px
+            margin-bottom -30px

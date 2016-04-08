@@ -1,6 +1,17 @@
 #event
     position relative
-    overflow hidden
+
+    &:after
+        absolute-cover()
+        content ''
+        overflow hidden
+        background-image url(assets-dir + '/logo/nodeconf-outline.svg')
+        background-repeat no-repeat
+        background-size 25% auto
+        background-attachment fixed
+        background-position left 70% center
+        background-repeat no-repeat
+        opacity 1
 
     .copy
         position relative
@@ -22,6 +33,7 @@
         right 0
         top 50%
         margin-top -280px
+        opacity .1
 
     @media (max-width: mobile-breakpoint)
 
@@ -31,3 +43,23 @@
             margin-top 0
             transform translateY(-50%)
             opacity .2
+
+        &:after
+            display block
+            background-attachment scroll
+            width 80%
+            max-width 300px
+            margin auto
+            margin-top -50px
+            margin-bottom 50px
+            padding-bottom @width
+            position static
+            background-position center center
+            background-size contain
+
+        .copy a
+            margin-top 10px
+            display block
+
+            .logo
+                margin-left -20px
