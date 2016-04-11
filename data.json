@@ -2,15 +2,6 @@
     "speakers": [
 
         {
-            "avatar"         : "/assets/photos/speakers/substack@2x.jpg",
-            "name"           : "James Halliday",
-            "title"          : "The disintermediated web",
-            "category"       : "start",
-            "bio"            : null,
-            "twitter_handle" : "substack"
-        },
-
-        {
             "avatar"         : "/assets/photos/speakers/kassandra-perch@2x.jpg",
             "name"           : "Kassandra Perch",
             "title"          : "Robots, Code, and People",
@@ -26,6 +17,15 @@
             "category"       : "start",
             "bio"            : null,
             "twitter_handle" : "nikhilaravi"
+        },
+
+        {
+          "avatar"         : "/assets/photos/speakers/substack@2x.jpg",
+          "name"           : "James Halliday",
+          "title"          : "The disintermediated web",
+          "category"       : "start",
+          "bio"            : null,
+          "twitter_handle" : "substack"
         },
 
         {
