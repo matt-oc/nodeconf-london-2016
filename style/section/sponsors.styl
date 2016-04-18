@@ -2,11 +2,20 @@ section#sponsors
     section-color(#131e36)
     text-align center
 
+    .sponsors-row
+
+        h4
+            display inline-block
+            position relative
+            top -20px
+            margin-right 20px
+
+        ul
+            vertical-align middle
+
     ul.sponsors-list
         debullet()
-        // border-radius()
-        margin-bottom 50px
-        // background color-white
+        margin-bottom 10px
         display inline-block
 
         li
@@ -29,10 +38,25 @@ section#sponsors
 
     @media (max-width: mobile-breakpoint)
 
+        h2
+            margin-bottom 60px
+
+        .sponsors-row
+
+            h4
+                display block
+                margin-top 40px
+                margin-bottom -20px
+
+            ul
+                vertical-align baseline
+
         ul.sponsors-list
 
             li
-                width 50%
+                width 140px
+                padding 10px
 
             &.community li
-                width (100% / 3)
+                width 100px
+                padding 10px
