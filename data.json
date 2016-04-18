@@ -7,7 +7,9 @@
             "title"          : "Robots, Code, and People",
             "category"       : "start",
             "bio"            : null,
-            "twitter_handle" : "nodebotanist"
+            "twitter_handle" : "nodebotanist",
+            "start"          : "09:05",
+            "end"            : "09:45"
         },
 
         {
@@ -16,7 +18,9 @@
             "title"          : "Server-less architecture in the wild",
             "category"       : "start",
             "bio"            : null,
-            "twitter_handle" : "nikhilaravi"
+            "twitter_handle" : "nikhilaravi",
+            "start"          : "09:50",
+            "end"            : "10:20"
         },
 
         {
@@ -25,16 +29,31 @@
           "title"          : "The disintermediated web",
           "category"       : "start",
           "bio"            : null,
-          "twitter_handle" : "substack"
+          "twitter_handle" : "substack",
+          "start"          : "10:25",
+          "end"            : "10:55"
+        },
+
+        {
+          "avatar"         : "",
+          "name"           : "",
+          "title"          : "Break",
+          "category"       : "",
+          "bio"            : null,
+          "twitter_handle" : "",
+          "start"          : "10:55",
+          "end"            : "11:10"
         },
 
         {
             "avatar"         : "/assets/photos/speakers/christian-heilmann@2x.jpg",
             "name"           : "Christian Heilmann",
-            "title"          : "making ES6 happen with ChakraCore and Node",
+            "title"          : "Making ES6 happen with ChakraCore and Node",
             "category"       : "build",
             "bio"            : null,
-            "twitter_handle" : "codepo8"
+            "twitter_handle" : "codepo8",
+            "start"          : "11:15",
+            "end"            : "11:45"
         },
 
         {
@@ -43,7 +62,9 @@
             "title"          : "State of Node.js Core",
             "category"       : "build",
             "bio"            : null,
-            "twitter_handle" : "cjihrig"
+            "twitter_handle" : "cjihrig",
+            "start"          : "11:50",
+            "end"            : "12:20"
         },
 
         {
@@ -52,7 +73,20 @@
             "title"          : "It goes to eleven",
             "category"       : "build",
             "bio"            : null,
-            "twitter_handle" : "wa7son"
+            "twitter_handle" : "wa7son",
+            "start"          : "12:25",
+            "end"            : "12:55"
+        },
+
+        {
+          "avatar"         : "",
+          "name"           : "",
+          "title"          : "Lunch",
+          "category"       : "",
+          "bio"            : null,
+          "twitter_handle" : "",
+          "start"          : "12:55",
+          "end"            : "13:45"
         },
 
         {
@@ -61,7 +95,9 @@
             "title"          : "How I Learned to Stop Worrying",
             "category"       : "ship",
             "bio"            : null,
-            "twitter_handle" : "nexxylove"
+            "twitter_handle" : "nexxylove",
+            "start"          : "13:50",
+            "end"            : "14:20"
         },
 
         {
@@ -70,7 +106,9 @@
             "title"          : "Avoiding Release Paralysis",
             "category"       : "ship",
             "bio"            : null,
-            "twitter_handle" : "sublimino"
+            "twitter_handle" : "sublimino",
+            "start"          : "14:25",
+            "end"            : "14:55"
         },
 
         {
@@ -79,7 +117,20 @@
             "title"          : "Kill all humans",
             "category"       : "ship",
             "bio"            : null,
-            "twitter_handle" : "janl"
+            "twitter_handle" : "janl",
+            "start"          : "15:00",
+            "end"            : "15:30"
+        },
+
+        {
+          "avatar"         : "",
+          "name"           : "",
+          "title"          : "Break",
+          "category"       : "",
+          "bio"            : null,
+          "twitter_handle" : "",
+          "start"          : "15:30",
+          "end"            : "15:45"
         },
 
         {
@@ -88,7 +139,9 @@
             "title"          : "SWIMming in the Microservices Ocean",
             "category"       : "use",
             "bio"            : null,
-            "twitter_handle" : "lucamaraschi"
+            "twitter_handle" : "lucamaraschi",
+            "start"          : "15:50",
+            "end"            : "16:10"
         },
 
         {
@@ -97,7 +150,20 @@
             "title"          : "Node.js that’s hugely reliable, fast, and scalable",
             "category"       : "use",
             "bio"            : null,
-            "twitter_handle" : "matthew1000"
+            "twitter_handle" : "matthew1000",
+            "start"          : "16:15",
+            "end"            : "16:45"
+        },
+
+        {
+            "avatar"         : "",
+            "name"           : "",
+            "title"          : "Panel",
+            "category"       : "use",
+            "bio"            : null,
+            "twitter_handle" : "",
+            "start"          : "16:50",
+            "end"            : "17:20"
         }
 
     ]

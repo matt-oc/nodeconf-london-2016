@@ -12,7 +12,8 @@ section#schedule(full-height): .page-size
 
                 th.start Start
                 th.end End
-                th.type Type
+                th.speaker Speaker
+                th.title Title
                 th.segment Segment
 
         tbody
@@ -20,113 +21,41 @@ section#schedule(full-height): .page-size
             tr
                 td.start 08:30
                 td.end 09:00
-                td.type Registration
+                td.speaker
+                td.title Registration
                 td.segment
 
             tr
                 td.start 09:05
                 td.end 09:10
-                td.type Talk
-                td.segment Welcome
-
-            tr.start-it
-                td.start 09:15
-                td.end 09:45
-                td.type Talk
-                td.segment Start it..
-
-            tr.start-it
-                td.start 09:50
-                td.end 10:20
-                td.type Talk
-                td.segment Start it..
-
-            tr.start-it
-                td.start 10:25
-                td.end 10:55
-                td.type Talk
-                td.segment Start it..
-
-            tr
-                td.start 10:55
-                td.end 11:10
-                td.type Break
+                td.speaker
+                td.title Welcome
                 td.segment
 
-            tr.build-it
-                td.start 11:15
-                td.end 11:45
-                td.type Talk
-                td.segment Build it..
+            each speaker, i in speakers
 
-            tr.build-it
-                td.start 11:50
-                td.end 12:20
-                td.type Talk
-                td.segment Build it..
-
-            tr.build-it
-                td.start 12:25
-                td.end 12:55
-                td.type Talk
-                td.segment Build it..
-
-            tr
-                td.start 12:55
-                td.end 13:45
-                td.type Lunch
-                td.segment
-
-            tr.ship-it
-                td.start 13:50
-                td.end 14:20
-                td.type Talk
-                td.segment Ship it..
-
-            tr.ship-it
-                td.start 14:25
-                td.end 14:55
-                td.type Talk
-                td.segment Ship it..
-
-            tr.ship-it
-                td.start 15:00
-                td.end 15:30
-                td.type Talk
-                td.segment Ship it..
-
-            tr
-                td.start 15:30
-                td.end 15:45
-                td.type Break
-                td.segment
-
-            tr.use-it
-                td.start 15:50
-                td.end 16:10
-                td.type Talk
-                td.segment Use it..
-
-            tr.use-it
-                td.start 16:15
-                td.end 16:45
-                td.type Talk
-                td.segment Use it..
-
-            tr.use-it
-                td.start 16:50
-                td.end 17:20
-                td.type Talk
-                td.segment Use it..
+              tr(class=speaker.category + '-it')
+                  td.start #{speaker.start}
+                  td.end #{speaker.end}
+                  td.speaker
+                    a.twitter-handle(href='https://www.twitter.com/#{speaker.twitter_handle}', target='_blank')
+                      if speaker.twitter_handle
+                        @#{speaker.twitter_handle}
+                  td.title #{speaker.title}
+                  td.segment
+                    if speaker.category
+                      | #{speaker.category} it
 
             tr
                 td.start 17:25
                 td.end 17:30
-                td.type Closing
+                td.speaker
+                td.title Closing
                 td.segment
 
             tr
                 td.start 17:30
                 td.end 19:00
-                td.type Drinks Reception
+                td.speaker
+                td.title Drinks Reception
                 td.segment
