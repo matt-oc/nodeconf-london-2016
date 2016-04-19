@@ -6,7 +6,7 @@ section#speakers(full-height): .page-size
 
     ul.speakers-list
 
-        each speaker, i in speakers
+        each speaker, i in speakers.filter(function (s) { return s.name })
 
             if i === 0 || i % 3 === 0
 

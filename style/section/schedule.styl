@@ -4,12 +4,10 @@ row-color(base-color = #999)
     border-left-color base-color
     background-color bg-color
 
-    // &:nth-child(odd)
-    //     background-color darken(bg-color, 2)
-
     .segment
         color base-color
         font-weight bold
+        text-transform capitalize
 
 #schedule
     accelerate()
@@ -26,6 +24,7 @@ row-color(base-color = #999)
         border-collapse collapse
         border-spacing 0
         overflow hidden
+        font-size 13px
 
         thead
             background lighten(color-blue, 20)
