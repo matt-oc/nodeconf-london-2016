@@ -4,7 +4,7 @@
         {
             "avatar"         : "/assets/photos/speakers/kassandra-perch@2x.jpg",
             "name"           : "Kassandra Perch",
-            "title"          : "Robots, Code, and People",
+            "title"          : "Robots, code and people",
             "category"       : "start",
             "bio"            : null,
             "twitter_handle" : "nodebotanist",
@@ -92,7 +92,7 @@
         {
             "avatar"         : "/assets/photos/speakers/emily-rose@2x.jpg",
             "name"           : "Emily Rose",
-            "title"          : "How I Learned to Stop Worrying",
+            "title"          : "How I learned to stop worrying",
             "category"       : "ship",
             "bio"            : null,
             "twitter_handle" : "nexxylove",
@@ -103,7 +103,7 @@
         {
             "avatar"         : "/assets/photos/speakers/andrew-martin@2x.jpg",
             "name"           : "Andrew Martin",
-            "title"          : "Avoiding Release Paralysis",
+            "title"          : "Avoiding release paralysis",
             "category"       : "ship",
             "bio"            : null,
             "twitter_handle" : "sublimino",
@@ -136,7 +136,7 @@
         {
             "avatar"         : "/assets/photos/speakers/luca-maraschi@2x.jpg",
             "name"           : "Luca Maraschi",
-            "title"          : "SWIMming in the Microservices Ocean",
+            "title"          : "SWIMming in the microservices ocean",
             "category"       : "use",
             "bio"            : null,
             "twitter_handle" : "lucamaraschi",

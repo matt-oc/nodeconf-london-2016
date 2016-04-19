@@ -40,11 +40,11 @@ section#schedule(full-height): .page-size
                   td.speaker
                     a.twitter-handle(href='https://www.twitter.com/#{speaker.twitter_handle}', target='_blank')
                       if speaker.twitter_handle
-                        @#{speaker.twitter_handle}
+                        | @#{speaker.twitter_handle}
                   td.title #{speaker.title}
                   td.segment
-                    if speaker.category
-                      | #{speaker.category} it
+                      if speaker.category
+                          | #{speaker.category} it
 
             tr
                 td.start 17:25
